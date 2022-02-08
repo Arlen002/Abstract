@@ -7,12 +7,13 @@ public class Dancer extends Person{
     public Dancer(String name, String designation, String groupName) {
         super(name, designation);
         this.groupName = groupName;
+        this.walk();
     }
     void dancing(){
-        System.out.println("Балетага тушуу ");
+        System.out.println(" Кара-жорго бийлоо. ");
     }
     @Override
     public String toString(){
-        return name+" "+ designation+" "+groupName;
+        return "Аты: "+name+",кесиби "+ designation+", группасы "+groupName;
     }
 }

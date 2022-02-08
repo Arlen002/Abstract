@@ -6,16 +6,14 @@ package com.company;
      public Programmer(String name, String designation, String companyName) {
          super(name, designation);
          this.companyName = companyName;
-         super.learn();
-         super.walk();
          super.eat();
      }
      void coding(){
-         System.out.println("Код жаза алуу");
+         System.out.println("Код жазган бул - менин суйуктуу ишим.");
      }
      @Override
      public String toString(){
-         return name+" "+ designation+" "+companyName;
+         return "Аты: "+name+", жумушу "+ designation+", иштеген компания "+companyName;
      }
 
  }

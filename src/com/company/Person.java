@@ -11,13 +11,13 @@ public class Person {
         this.designation = designation;
     }
     void learn(){
-        System.out.println(" IT - Уйронуудомун ");
+        System.out.println(" Жаны иснтрументтерди ойногондуу уйронуудомун. ");
     }
     void walk(){
-        System.out.println("Кундо эрте менен чуркоо ");
+        System.out.println(" Kундо эрте менен чуркайм, денемди чын кармоо учун. ");
     }
     void eat(){
-        System.out.println("Туура тамактануу ");
+        System.out.println(" Код жазып жатканда созсуз кофе ичем. ");
     }
     @Override
     public String toString(){
