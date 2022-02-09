@@ -1,24 +1,21 @@
 package com.company;
-
+import java.util.Arrays;
 public class Main {
-
     public static void main(String[] args) {
 
-	Programmer pr = new Programmer(" Arlen ","Backand Developer "," Peaksoft ");
-        System.out.println(pr);
-        pr.coding();
+        Student st = new Student("Арлен"," online ",20,"OshMU");
+        System.out.println(st);
 
-	Dancer dancer = new Dancer(" Atai "," Бийчи "," Ak-Kalpak ");
-        System.out.println(dancer);
-        dancer.dancing();
+        Task task = new Task("Arlen", true,st);
+        Task task2 = new Task("Alibek", true,st);
+        Repetitor rep = new Repetitor("Алтынбек "," online ",25);
+        System.out.println(rep);
 
-	Singer singer = new Singer(" Улан Осмон Улуу "," Гитарист "," Шумкар ");
-		System.out.println(singer);
-		singer.playGitar();
-		singer.singing();
-
-
+        rep.sumMethed(task,st);
+        rep.sumMethed(task2,st);
+        task.taskinfo();
+        task2.taskinfo();
+        st.studentinfo();
 
     }
 }
-

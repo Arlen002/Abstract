@@ -1,27 +1,41 @@
 package com.company;
 
 public class Person {
-    String name;
-    String designation;
+    private String name;
+    private String status;
+    private int age;
 
-    public Person(){
-    }
-    public Person(String name, String designation) {
+    public Person(String name, String status, int age) {
         this.name = name;
-        this.designation = designation;
+        this.status = status;
+        this.age = age;
     }
-    void learn(){
-        System.out.println(" Жаны иснтрументтерди ойногондуу уйронуудомун. ");
+
+    public String getName() {
+        return name;
     }
-    void walk(){
-        System.out.println(" Kундо эрте менен чуркайм, денемди чын кармоо учун. ");
+
+    public void setName(String name) {
+        this.name = name;
     }
-    void eat(){
-        System.out.println(" Код жазып жатканда созсуз кофе ичем. ");
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
     @Override
     public String toString(){
-        return name+ designation;
+        return "Аты: "+name+ ", статусу - "+ status+", жашы - "+age;
     }
-
 }
